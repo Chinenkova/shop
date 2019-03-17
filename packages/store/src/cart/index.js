@@ -35,7 +35,8 @@ class Cart extends Component {
   }
 
   createOrder = () => {
-    fetch("/orders/create", {
+    if(Object.keys(this.state.cart).length) {
+      fetch("/orders/create", {
         method: "post",
         headers: {
           'Accept': 'application/json',
@@ -47,6 +48,11 @@ class Cart extends Component {
             order: Object.values(this.state.cart)
         })
     })
+    this.clearCart()();
+    } else {
+      alert('Корзина пуста')
+    }
+        
   }
 
   render() {
