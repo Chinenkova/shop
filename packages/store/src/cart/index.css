@@ -1,0 +1,13 @@
+
+.order-form {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    margin-right: 20px;
+}
+.order-form button {
+    margin-right: 20px;
+}

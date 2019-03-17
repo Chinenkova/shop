@@ -1,0 +1,20 @@
+.App {
+  text-align: center;  
+}
+
+.App ul {
+  display: flex;
+}
+
+.App ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.App ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+
